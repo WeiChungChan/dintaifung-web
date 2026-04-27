@@ -1,0 +1,866 @@
+[
+  {
+    "food_id": "cid3_4e7e_7178_56db_5b63_8c46_28_51b7_83dc_29",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "乾煸四季豆 (冷菜)",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN065.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_6dbc_62cc_96f2_8033",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "涼拌雲耳",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN066.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_5c0f_83dc",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "小菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN057.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_70e4_9ea9",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "烤麩",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN064.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_8fa3_5473_9ec3_74dc",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "辣味黃瓜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN070.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_5be7_5f0f_9ec3_82bd_83dc",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "寧式黃芽菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN069.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_7d39_8208_9189_96de",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "紹興醉雞",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN068.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_70b8_6392_9aa8",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "炸排骨",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN061.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_7d05_71d2_8304_5b50_28_51b7_83dc_29",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "紅燒茄子 (冷菜)",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN062.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_9999_8fa3_725b_809a_28_51b7_83dc_29",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "香辣牛肚 (冷菜)",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN063.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_7cd6_918b_6392_9aa8",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "糖醋排骨",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN071.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_6ce1_83dc",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "泡菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN060.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_51b7_7b4d_6c99_62c9",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "冷筍沙拉",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN058.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_9999_9165_8766_9905",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "香酥蝦餅",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/1749178161.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid3_6ef7_725b_8171",
+    "category_id": 3,
+    "category_name_zh": "開胃菜",
+    "name_zh": "滷牛腱",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/Appetizers/d0a605904b7b0044.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=3",
+    "is_active": true
+  },
+  {
+    "food_id": "cid2_5c0f_7c60_5305",
+    "category_id": 2,
+    "category_name_zh": "小籠包",
+    "name_zh": "小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN011.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=2",
+    "is_active": true
+  },
+  {
+    "food_id": "cid2_87f9_7c89_5c0f_7c60_5305",
+    "category_id": 2,
+    "category_name_zh": "小籠包",
+    "name_zh": "蟹粉小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN016.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=2",
+    "is_active": true
+  },
+  {
+    "food_id": "cid2_96de_8089_5c0f_7c60_5305",
+    "category_id": 2,
+    "category_name_zh": "小籠包",
+    "name_zh": "雞肉小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN015.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=2",
+    "is_active": true
+  },
+  {
+    "food_id": "cid2_7d72_74dc_8766_4ec1_5c0f_7c60_5305",
+    "category_id": 2,
+    "category_name_zh": "小籠包",
+    "name_zh": "絲瓜蝦仁小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN014.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=2",
+    "is_active": true
+  },
+  {
+    "food_id": "cid2_677e_9732_5c0f_7c60_5305",
+    "category_id": 2,
+    "category_name_zh": "小籠包",
+    "name_zh": "松露小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/xiaolongbao/BN013.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=2",
+    "is_active": true
+  },
+  {
+    "food_id": "cid2_852c_98df_5c0f_7c60_5305",
+    "category_id": 2,
+    "category_name_zh": "小籠包",
+    "name_zh": "蔬食小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/1718168097.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=2",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_8766_8089_714e_9903",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "蝦肉煎餃",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0781.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_83dc_8089_84b8_9903",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "菜肉蒸餃",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0761.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_8766_8089_84b8_9903",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "蝦肉蒸餃",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/dumpling/BN080.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_9bae_9b5a_84b8_9903",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "鮮魚蒸餃",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/dumpling/BN079.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_9999_83c7_7d20_9903",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "香菇素餃",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN075.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_8766_4ec1_71d2_8ce3",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "蝦仁燒賣",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0771.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid4_7cef_8089_71d2_8ce3",
+    "category_id": 4,
+    "category_name_zh": "餃類&燒賣",
+    "name_zh": "糯肉燒賣",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0811.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=4",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_9bae_8089_5927_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "鮮肉大包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0101.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_83dc_8089_5927_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "菜肉大包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0091.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_9999_83c7_7d20_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "香菇素包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0041.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_852c_98df_5927_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "蔬食大包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/Buns/pic/Mixed_Greens_and_Mushroom_Buns.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_8c46_6c99_5927_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "豆沙大包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0021.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_829d_9ebb_5927_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "芝麻大包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN003.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_828b_6ce5_5927_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "芋泥大包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0011.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_9ec3_91d1_6d41_6c99_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "黃金流沙包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/1616392641_thumb_942_504.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_8ff7_4f60_8c46_6c99_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "迷你豆沙包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN007.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_8ff7_4f60_829d_9ebb_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "迷你芝麻包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0081.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_8ff7_4f60_828b_6ce5_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "迷你芋泥包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0061.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid5_8ff7_4f60_5de7_514b_529b_5305",
+    "category_id": 5,
+    "category_name_zh": "大包",
+    "name_zh": "迷你巧克力包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0051.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=5",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_5143_76c5_96de_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "元盅雞湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN039.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_5143_76c5_725b_8089_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "元盅牛肉湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/soup/pic_soup/beef_soup.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_7d05_71d2_725b_8089_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "紅燒牛肉湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0421.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_83dc_8089_991b_98e9_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "菜肉餛飩湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0451.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_8766_8089_991b_98e9_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "蝦肉餛飩湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0471.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_9178_8fa3_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "酸辣湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0461.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_8543_8304_8c46_8150_86cb_82b1_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "蕃茄豆腐蛋花湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/soup/pic_soup/BN044ori.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_6cb9_8c46_8150_7d30_7c89",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "油豆腐細粉",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0411.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_677e_9732_9bae_83c7_76c5",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "松露鮮菇盅",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/soup/pic_soup/Mushroom_Soup_942x504.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid6_82e6_74dc_6392_9aa8_6e6f",
+    "category_id": 6,
+    "category_name_zh": "湯品",
+    "name_zh": "苦瓜排骨湯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0431.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=6",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_9ad8_9e97_83dc",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "高麗菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0881.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_6e05_7092_8766_4ec1",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "清炒蝦仁",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0891.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_7a7a_5fc3_83dc",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "空心菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0871.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_5730_74dc_8449",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "地瓜葉",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0841.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_83a7_83dc",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "莧菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0901.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_83a7_83dc_8150_7af9",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "莧菜腐竹",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0911.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_83e0_83dc",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "菠菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0931.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_83e0_83dc_8150_7af9",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "菠菜腐竹",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0941.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_8c46_82d7",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "豆苗",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0851.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_8c46_82d7_8766_4ec1",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "豆苗蝦仁",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0861.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_41_83dc",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "A菜",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0821.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid7_5c71_8607",
+    "category_id": 7,
+    "category_name_zh": "盤菜",
+    "name_zh": "山蘇",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN083.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=7",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_7d05_71d2_725b_8089_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "紅燒牛肉麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0511.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_5143_76c5_96de_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "元盅雞麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN049.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_5143_76c5_725b_8089_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "元盅牛肉麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0481.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_7d05_71d2_725b_8089_6e6f_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "紅燒牛肉湯麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0501.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_96ea_83dc_8089_7d72_6e6f_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "雪菜肉絲湯麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0531.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_8766_8089_991b_98e9_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "蝦肉餛飩麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0561.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_83dc_8089_991b_98e9_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "菜肉餛飩麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0541.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_8766_4ec1_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "蝦仁麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0551.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid9_6392_9aa8_9eb5",
+    "category_id": 9,
+    "category_name_zh": "湯麵",
+    "name_zh": "排骨麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0521.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=9",
+    "is_active": true
+  },
+  {
+    "food_id": "cid10_70b8_91ac_9eb5",
+    "category_id": 10,
+    "category_name_zh": "乾拌麵",
+    "name_zh": "炸醬麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0271.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=10",
+    "is_active": true
+  },
+  {
+    "food_id": "cid10_96ea_83dc_8089_7d72_4e7e_62cc_9eb5",
+    "category_id": 10,
+    "category_name_zh": "乾拌麵",
+    "name_zh": "雪菜肉絲乾拌麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0251.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=10",
+    "is_active": true
+  },
+  {
+    "food_id": "cid10_64d4_64d4_9eb5",
+    "category_id": 10,
+    "category_name_zh": "乾拌麵",
+    "name_zh": "擔擔麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN028.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=10",
+    "is_active": true
+  },
+  {
+    "food_id": "cid10_9ebb_91ac_9eb5",
+    "category_id": 10,
+    "category_name_zh": "乾拌麵",
+    "name_zh": "麻醬麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN026.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=10",
+    "is_active": true
+  },
+  {
+    "food_id": "cid10_7d05_6cb9_71c3_9eb5",
+    "category_id": 10,
+    "category_name_zh": "乾拌麵",
+    "name_zh": "紅油燃麵",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0241.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=10",
+    "is_active": true
+  },
+  {
+    "food_id": "cid1_8766_4ec1_86cb_7092_98ef",
+    "category_id": 1,
+    "category_name_zh": "炒飯",
+    "name_zh": "蝦仁蛋炒飯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN022.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=1",
+    "is_active": true
+  },
+  {
+    "food_id": "cid1_8089_7d72_86cb_7092_98ef",
+    "category_id": 1,
+    "category_name_zh": "炒飯",
+    "name_zh": "肉絲蛋炒飯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN019.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=1",
+    "is_active": true
+  },
+  {
+    "food_id": "cid1_8766_4ec1_8089_7d72_86cb_7092_98ef",
+    "category_id": 1,
+    "category_name_zh": "炒飯",
+    "name_zh": "蝦仁肉絲蛋炒飯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN021.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=1",
+    "is_active": true
+  },
+  {
+    "food_id": "cid1_6392_9aa8_86cb_7092_98ef",
+    "category_id": 1,
+    "category_name_zh": "炒飯",
+    "name_zh": "排骨蛋炒飯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN020.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=1",
+    "is_active": true
+  },
+  {
+    "food_id": "cid1_4ec0_852c_86cb_7092_98ef",
+    "category_id": 1,
+    "category_name_zh": "炒飯",
+    "name_zh": "什蔬蛋炒飯",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0181.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=1",
+    "is_active": true
+  },
+  {
+    "food_id": "cid11_7d05_6cb9_6284_624b_28_8766_8089_29",
+    "category_id": 11,
+    "category_name_zh": "餛飩",
+    "name_zh": "紅油抄手 ( 蝦肉 )",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0961.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=11",
+    "is_active": true
+  },
+  {
+    "food_id": "cid11_7d05_6cb9_6284_624b_28_83dc_8089_29",
+    "category_id": 11,
+    "category_name_zh": "餛飩",
+    "name_zh": "紅油抄手 ( 菜肉 )",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0951.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=11",
+    "is_active": true
+  },
+  {
+    "food_id": "cid11_991b_98e9_4e7e_62cc_28_8766_8089_29",
+    "category_id": 11,
+    "category_name_zh": "餛飩",
+    "name_zh": "餛飩乾拌 ( 蝦肉 )",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0981.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=11",
+    "is_active": true
+  },
+  {
+    "food_id": "cid11_991b_98e9_4e7e_62cc_28_83dc_8089_29",
+    "category_id": 11,
+    "category_name_zh": "餛飩",
+    "name_zh": "餛飩乾拌 ( 菜肉 )",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0971.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=11",
+    "is_active": true
+  },
+  {
+    "food_id": "cid12_9bae_8089_7cbd_5b50",
+    "category_id": 12,
+    "category_name_zh": "粽子",
+    "name_zh": "鮮肉粽子",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/1775636872.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=12",
+    "is_active": true
+  },
+  {
+    "food_id": "cid12_8c46_6c99_7cbd_5b50",
+    "category_id": 12,
+    "category_name_zh": "粽子",
+    "name_zh": "豆沙粽子",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/1775636895.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=12",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_6838_6843_9b06_7cd5",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "核桃鬆糕",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN_red_bean_rice_cake-new_thumb_942_504.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_8d64_8c46_9b06_7cd5",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "赤豆鬆糕",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN_red-bean-rice-cake.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_5343_5c64_6cb9_7cd5",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "千層油糕",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/dessert/BN_chinese-style-layer-cake.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_8c46_6c99_5c0f_7c60_5305",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "豆沙小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0331.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_828b_6ce5_5c0f_7c60_5305",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "芋泥小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0321.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_5de7_514b_529b_5c0f_7c60_5305",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "巧克力小籠包",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/BN0311.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_7cd6_6c34_829d_9ebb_6e6f_5713_28_71b1_29",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "糖水芝麻湯圓 (熱)",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/dessert/sesame_mochi_20230620.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_9152_91c0_829d_9ebb_6e6f_5713_28_71b1_29",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "酒釀芝麻湯圓 (熱)",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/1733971237.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  },
+  {
+    "food_id": "cid13_9280_8033_56db_5bf6_751c_6e6f_28_51b0_29",
+    "category_id": 13,
+    "category_name_zh": "甜點",
+    "name_zh": "銀耳四寶甜湯(冰)",
+    "image_url": "https://www.dintaifung.com.tw/archive/images/food/dessert/BN0361NEW.png",
+    "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
+    "is_active": true
+  }
+]
