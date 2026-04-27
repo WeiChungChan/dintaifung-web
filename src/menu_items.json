@@ -862,5 +862,16 @@
     "image_url": "https://www.dintaifung.com.tw/archive/images/food/dessert/BN0361NEW.png",
     "source_url": "https://www.dintaifung.com.tw/food_show.php?cid=13",
     "is_active": true
+  },
+  
+  {
+    "food_id": "meme_ginger",
+    "category_id": 999,
+    "category_name_zh": "隱藏選項",
+    "name_zh": "薑絲",
+    "image_url": "",
+    "source_url": "",
+    "is_active": true,
+    "is_meme": true
   }
 ]
