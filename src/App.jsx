@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { STORE_MAP } from "./storeMap";
 import "./App.css";
+import VotePage from "./VotePage";
 
 const API_BASE = "http://34.45.75.196:8000";
 
@@ -434,6 +435,7 @@ export default function App() {
     ).padStart(2, "0")}`;
   }, []);
 
+  const [activeTab, setActiveTab] = useState("home");
   const [lang, setLang] = useState("zh");
   const [date, setDate] = useState(todayStr);
   const [time, setTime] = useState("12:50");
@@ -466,85 +468,109 @@ export default function App() {
   return (
     <div className="page">
       <div className="container">
-        <header className="hero">
-          <div className="hero-topbar">
-            <p className="hero-kicker">{t.appKicker}</p>
+        <nav className="app-tabs">
+          <button
+            type="button"
+            className={activeTab === "home" ? "active" : ""}
+            onClick={() => setActiveTab("home")}
+          >
+            主頁
+          </button>
 
-            <div className="lang-switcher">
-              {LANGS.map((l) => (
-                <button
-                  key={l.code}
-                  type="button"
-                  className={`lang-btn ${lang === l.code ? "active" : ""}`}
-                  onClick={() => setLang(l.code)}
-                  title={l.code}
-                >
-                  {l.label}
+          <button
+            type="button"
+            className={activeTab === "vote" ? "active" : ""}
+            onClick={() => setActiveTab("vote")}
+          >
+            美味排名
+          </button>
+        </nav>
+
+        {activeTab === "home" && (
+          <>
+            <header className="hero">
+              <div className="hero-topbar">
+                <p className="hero-kicker">{t.appKicker}</p>
+
+                <div className="lang-switcher">
+                  {LANGS.map((l) => (
+                    <button
+                      key={l.code}
+                      type="button"
+                      className={`lang-btn ${lang === l.code ? "active" : ""}`}
+                      onClick={() => setLang(l.code)}
+                      title={l.code}
+                    >
+                      {l.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <h1>{t.title}</h1>
+              <p className="hero-subtitle">{t.subtitle}</p>
+            </header>
+
+            <section className="panel search-panel">
+              <form className="search-form" onSubmit={handleSearch}>
+                <div className="field">
+                  <label>{t.date}</label>
+                  <input
+                    type="date"
+                    value={date}
+                    min={todayStr}
+                    onChange={(e) => setDate(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div className="field">
+                  <label>{t.seatTime}</label>
+                  <select value={time} onChange={(e) => setTime(e.target.value)}>
+                    {TIME_OPTIONS.map((tt) => (
+                      <option key={tt} value={tt}>
+                        {tt}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <button className="search-button" type="submit" disabled={loading}>
+                  {loading ? t.querying : t.query}
                 </button>
-              ))}
-            </div>
-          </div>
+              </form>
+            </section>
 
-          <h1>{t.title}</h1>
-          <p className="hero-subtitle">{t.subtitle}</p>
-        </header>
+            <section className="ad-banner">
+              <div className="ad-label">{t.adTitle}</div>
+              <div className="ad-content">{t.adText}</div>
+            </section>
 
-        <section className="panel search-panel">
-          <form className="search-form" onSubmit={handleSearch}>
-            <div className="field">
-              <label>{t.date}</label>
-              <input
-                type="date"
-                value={date}
-                min={todayStr}
-                onChange={(e) => setDate(e.target.value)}
-                required
-              />
-            </div>
+            <section className="site-warning">{t.warning}</section>
 
-            <div className="field">
-              <label>{t.seatTime}</label>
-              <select value={time} onChange={(e) => setTime(e.target.value)}>
-                {TIME_OPTIONS.map((tt) => (
-                  <option key={tt} value={tt}>
-                    {tt}
-                  </option>
-                ))}
-              </select>
-            </div>
+            {error && <section className="panel error-box">{error}</section>}
 
-            <button className="search-button" type="submit" disabled={loading}>
-              {loading ? t.querying : t.query}
-            </button>
-          </form>
-        </section>
+            {result && (
+              <section className="results-section">
+                <div className="results-header">
+                  <h2>{t.resultTitle}</h2>
+                  <p>
+                    {t.targetSeatTime}：{result.target_seat_time}　{t.weekday}：
+                    {t.weekdays[result.weekday]}
+                  </p>
+                </div>
 
-        <section className="ad-banner">
-          <div className="ad-label">{t.adTitle}</div>
-          <div className="ad-content">{t.adText}</div>
-        </section>
-
-        <section className="site-warning">{t.warning}</section>
-
-        {error && <section className="panel error-box">{error}</section>}
-
-        {result && (
-          <section className="results-section">
-            <div className="results-header">
-              <h2>{t.resultTitle}</h2>
-              <p>
-                {t.targetSeatTime}：{result.target_seat_time}　{t.weekday}：
-                {t.weekdays[result.weekday]}
-              </p>
-            </div>
-
-            <div className="results-list">
-              {result.items.map((item) => (
-                <StoreCard key={item.store_id} item={item} lang={lang} t={t} />
-              ))}
-            </div>
-          </section>
+                <div className="results-list">
+                  {result.items.map((item) => (
+                    <StoreCard key={item.store_id} item={item} lang={lang} t={t} />
+                  ))}
+                </div>
+              </section>
+            )}
+          </>
         )}
+
+        {activeTab === "vote" && <VotePage />}
       </div>
     </div>
   );
