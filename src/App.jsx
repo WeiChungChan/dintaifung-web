@@ -4,7 +4,7 @@ import "./App.css";
 import VotePage from "./VotePage";
 import { trackEvent } from "./ga";
 
-const API_BASE = "http://34.45.75.196:8000";
+const API_BASE = "/api";
 
 const LANGS = [
   { code: "zh", label: "🇹🇼" },

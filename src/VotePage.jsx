@@ -3,7 +3,7 @@ import menuItems from "./menu_items.json";
 import "./App.css";
 import { trackEvent } from "./ga";
 
-const API_BASE = "http://34.45.75.196:8000";
+const API_BASE = "/api";
 const VOTE_TOPIC = "top3_dishes";
 const VOTED_KEY = `voted_${VOTE_TOPIC}`;
 const MY_VOTE_KEY = `my_vote_${VOTE_TOPIC}`;
