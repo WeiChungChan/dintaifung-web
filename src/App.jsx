@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { STORE_MAP } from "./storeMap";
 import "./App.css";
 import VotePage from "./VotePage";
+import { trackEvent } from "./ga";
 
 const API_BASE = "http://34.45.75.196:8000";
 
@@ -356,6 +357,11 @@ function StoreCard({ item, lang, t }) {
       onClick={() => {
         const url = STORE_MAP[item.store_id];
         if (url) {
+          trackEvent("click_store_map", {
+            store_id: item.store_id,
+            store_name_zh: item.store_name_zh,
+          });
+
           window.open(url, "_blank");
         }
       }}
@@ -450,6 +456,11 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
     setError("");
+	
+	trackEvent("search_queue", {
+	  weekday,
+	  target_time: time,
+	});
 
     try {
       const url = `${API_BASE}/predict?weekday=${weekday}&time=${encodeURIComponent(time)}`;
@@ -498,7 +509,12 @@ export default function App() {
                       key={l.code}
                       type="button"
                       className={`lang-btn ${lang === l.code ? "active" : ""}`}
-                      onClick={() => setLang(l.code)}
+                      onClick={() => {
+                        setLang(l.code);
+                        trackEvent("change_language", {
+                          lang: l.code,
+                        });
+                      }}
                       title={l.code}
                     >
                       {l.label}

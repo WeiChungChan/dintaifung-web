@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import menuItems from "./menu_items.json";
 import "./App.css";
+import { trackEvent } from "./ga";
 
 const API_BASE = "http://34.45.75.196:8000";
 const VOTE_TOPIC = "top3_dishes";
@@ -11,32 +12,25 @@ const CLIENT_ID_KEY = "dtf_vote_client_id";
 const EMPTY_CHOICES = { 1: "", 2: "", 3: "" };
 
 function generateClientId() {
-  if (window.crypto?.randomUUID) {
-    return window.crypto.randomUUID();
-  }
-
+  if (window.crypto?.randomUUID) return window.crypto.randomUUID();
   return `client_${Date.now()}_${Math.random().toString(36).slice(2, 12)}`;
 }
 
 function getClientId() {
   let id = localStorage.getItem(CLIENT_ID_KEY);
-
   if (!id) {
     id = generateClientId();
     localStorage.setItem(CLIENT_ID_KEY, id);
   }
-
   return id;
 }
 
 function loadSavedChoices() {
   const saved = localStorage.getItem(MY_VOTE_KEY);
-
   if (!saved) return EMPTY_CHOICES;
 
   try {
     const parsed = JSON.parse(saved);
-
     return {
       1: parsed["1"] || parsed[1] || "",
       2: parsed["2"] || parsed[2] || "",
@@ -112,7 +106,6 @@ export default function VotePage() {
 
   const filteredItems = useMemo(() => {
     if (selectedCategory === "all") return activeItems;
-
     return activeItems.filter(
       (item) => String(item.category_id) === String(selectedCategory)
     );
@@ -146,10 +139,7 @@ export default function VotePage() {
     }));
 
     return [...officialRows, ...memeRows].sort((a, b) => {
-      if (b.total_score !== a.total_score) {
-        return b.total_score - a.total_score;
-      }
-
+      if (b.total_score !== a.total_score) return b.total_score - a.total_score;
       if (a.display_type === "meme" && b.display_type !== "meme") return -1;
       if (a.display_type !== "meme" && b.display_type === "meme") return 1;
 
@@ -167,31 +157,30 @@ export default function VotePage() {
 
   const visibleResults = useMemo(() => {
     if (rankingExpanded) return displayResults;
-  
+
     const top3Official = displayResults.filter(
       (row) => row.display_type === "official" && row.official_rank <= 3
     );
-  
-    const gingerInTop3Range = displayResults.find((row, index) => {
-      return row.display_type === "meme" && index <= 2;
-    });
+
+    const gingerInTop3Range = displayResults.find(
+      (row, index) => row.display_type === "meme" && index <= 2
+    );
 
     if (gingerInTop3Range) {
       return [...top3Official, gingerInTop3Range].sort((a, b) => {
         if (b.total_score !== a.total_score) return b.total_score - a.total_score;
-  
         if (a.display_type === "meme" && b.display_type !== "meme") return -1;
         if (a.display_type !== "meme" && b.display_type === "meme") return 1;
-  
         return (a.official_rank || 999) - (b.official_rank || 999);
       });
     }
 
-  return top3Official;
-}, [displayResults, rankingExpanded]);
+    return top3Official;
+  }, [displayResults, rankingExpanded]);
 
   async function fetchResults() {
     setLoadingResults(true);
+
     try {
       const res = await fetch(
         `${API_BASE}/votes/results?vote_topic=${encodeURIComponent(VOTE_TOPIC)}`
@@ -239,6 +228,13 @@ export default function VotePage() {
     setMessage("");
   }
 
+  function lockAsVoted(nextMessage) {
+    localStorage.setItem(VOTED_KEY, "true");
+    localStorage.setItem(MY_VOTE_KEY, JSON.stringify(choices));
+    setHasVoted(true);
+    setMessage(nextMessage);
+  }
+
   async function submitVote() {
     setMessage("");
 
@@ -281,14 +277,18 @@ export default function VotePage() {
 
       const data = await res.json();
 
-      localStorage.setItem(VOTED_KEY, "true");
-      localStorage.setItem(MY_VOTE_KEY, JSON.stringify(choices));
-      setHasVoted(true);
+      trackEvent("vote_submit", {
+        vote_topic: VOTE_TOPIC,
+        first_food_id: choices[1],
+        second_food_id: choices[2],
+        third_food_id: choices[3],
+        status: data.status,
+      });
 
       if (data.status === "already_voted") {
-        setMessage("你已經投過票了，排行榜仍可查看。");
+        lockAsVoted("你已經投過票了，排行榜仍可查看。");
       } else {
-        setMessage("投票成功！排行榜已更新。");
+        lockAsVoted("投票成功！排行榜已更新。");
       }
 
       await fetchResults();
@@ -356,7 +356,14 @@ export default function VotePage() {
               <button
                 type="button"
                 className="ranking-toggle-button"
-                onClick={() => setRankingExpanded((prev) => !prev)}
+                onClick={() => {
+                  const nextExpanded = !rankingExpanded;
+                  setRankingExpanded(nextExpanded);
+
+                  trackEvent("toggle_ranking", {
+                    expanded: nextExpanded,
+                  });
+                }}
               >
                 {rankingExpanded
                   ? "收合排名"
