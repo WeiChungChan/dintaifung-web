@@ -4,6 +4,9 @@ import "./App.css";
 import VotePage from "./VotePage";
 import { trackEvent } from "./ga";
 import WheelPage from "./WheelPage";
+import AboutPage from "./AboutPage";
+import ContactPage from "./ContactPage";
+import PrivacyPage from "./PrivacyPage";
 
 const API_BASE = "/api";
 
@@ -597,7 +600,20 @@ export default function App() {
 
         {activeTab === "vote" && <VotePage />}
 		{activeTab === "wheel" && <WheelPage />}
+		{activeTab === "about" && <AboutPage />}
+		{activeTab === "contact" && <ContactPage />}
+		{activeTab === "privacy" && <PrivacyPage />}
       </div>
+	  
+	  <footer className="site-footer">
+	    <div className="footer-links">
+	      <button type="button" onClick={() => setActiveTab("about")}>關於我們</button>
+	      <button type="button" onClick={() => setActiveTab("contact")}>聯絡我們</button>
+	      <button type="button" onClick={() => setActiveTab("privacy")}>隱私權政策</button>
+ 	   </div>
+
+	    <div className="footer-copy">© 2026 Shoronpolover</div>
+	  </footer>
     </div>
   );
 }
