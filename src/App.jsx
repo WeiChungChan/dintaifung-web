@@ -7,6 +7,7 @@ import WheelPage from "./WheelPage";
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
 import PrivacyPage from "./PrivacyPage";
+import GuidePage from "./GuidePage";
 
 const API_BASE = "/api";
 
@@ -603,6 +604,7 @@ export default function App() {
 		{activeTab === "about" && <AboutPage />}
 		{activeTab === "contact" && <ContactPage />}
 		{activeTab === "privacy" && <PrivacyPage />}
+		{activeTab === "guide" && <GuidePage />}
       </div>
 	  
 	  <footer className="site-footer">
@@ -610,6 +612,7 @@ export default function App() {
 	      <button type="button" onClick={() => setActiveTab("about")}>關於我們</button>
 	      <button type="button" onClick={() => setActiveTab("contact")}>聯絡我們</button>
 	      <button type="button" onClick={() => setActiveTab("privacy")}>隱私權政策</button>
+		  <button type="button" onClick={() => setActiveTab("guide")}>使用指南</button>
  	   </div>
 
 	    <div className="footer-copy">© 2026 Shoronpolover</div>
