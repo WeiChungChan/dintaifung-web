@@ -952,6 +952,19 @@ select {
   font-size: 13px;
 }
 
+.brand-kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-kicker img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* =========================
    Mobile
 ========================= */

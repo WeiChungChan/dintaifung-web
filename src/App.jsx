@@ -514,7 +514,10 @@ export default function App() {
           <>
             <header className="hero">
               <div className="hero-topbar">
-                <p className="hero-kicker">{t.appKicker}</p>
+                <div className="brand-kicker">
+                  <img src="/shoronpolover-logo.png" alt="Shoronpolover logo" />
+                  <p className="hero-kicker">{t.appKicker}</p>
+                </div>
 
                 <div className="lang-switcher">
                   {LANGS.map((l) => (
