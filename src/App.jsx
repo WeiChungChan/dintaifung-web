@@ -541,6 +541,9 @@ export default function App() {
 
               <h1>{t.title}</h1>
               <p className="hero-subtitle">{t.subtitle}</p>
+			  <p className="seo-brand">
+			    Shoronpolover 是一個鼎泰豐抽號時間助手，幫助使用者預測最佳抽號時間。
+			  </p>
             </header>
 
             <section className="panel search-panel">

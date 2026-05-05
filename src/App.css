@@ -965,6 +965,11 @@ select {
   object-fit: cover;
 }
 
+.seo-brand {
+  position: absolute;
+  left: -9999px;
+}
+
 /* =========================
    Mobile
 ========================= */
