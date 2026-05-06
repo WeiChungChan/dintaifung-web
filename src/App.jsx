@@ -515,7 +515,7 @@ export default function App() {
             <header className="hero">
               <div className="hero-topbar">
                 <div className="brand-kicker">
-                  <img src="/shoronpolover-logo.png" alt="Shoronpolover logo" />
+                  <img src="/favicon.ico" alt="Shoronpolover logo" />
                   <p className="hero-kicker">{t.appKicker}</p>
                 </div>
 
