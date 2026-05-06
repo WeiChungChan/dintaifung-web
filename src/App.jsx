@@ -353,7 +353,7 @@ function renderLastTimeText(item, t) {
 }
 
 function StoreCard({ item, lang, t }) {
-  const badge = getBadge(item, t);
+  //const badge = getBadge(item, t);
   const subName = getStoreSubName(item, lang);
 
   return (
@@ -384,7 +384,7 @@ function StoreCard({ item, lang, t }) {
           {subName && <p className="store-name-en">{subName}</p>}
         </div>
 
-        <span className={badge.className}>{badge.text}</span>
+        //<span className={badge.className}>{badge.text}</span>
       </div>
 
       {item.status === "closed" && (
