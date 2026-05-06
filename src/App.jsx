@@ -338,13 +338,19 @@ function getStoreSubName(item, lang) {
 }
 
 function getBadge(item, t) {
-  if (item.status === "closed") return { text: t.closed, className: "badge badge-muted" };
-  if (item.status === "insufficient_data") return { text: t.insufficient, className: "badge badge-muted" };
-  if (item.wait_minutes === 0) return { text: t.directEntry, className: "badge badge-low" };
-  if (item.risk_level === "high") return { text: t.highRisk, className: "badge badge-high" };
-  if (item.risk_level === "medium") return { text: t.mediumRisk, className: "badge badge-medium" };
-  if (item.risk_level === "low") return { text: t.lowRisk, className: "badge badge-low" };
-  return { text: t.predictable, className: "badge badge-low" };
+  if (item.status === "closed") {
+    return { text: t.closed, className: "badge badge-muted" };
+  }
+
+  if (item.status === "insufficient_data") {
+    return { text: t.insufficient, className: "badge badge-muted" };
+  }
+
+  if (item.wait_minutes === 0) {
+    return { text: t.directEntry, className: "badge badge-low" };
+  }
+
+  return null;
 }
 
 function renderLastTimeText(item, t) {
@@ -353,7 +359,7 @@ function renderLastTimeText(item, t) {
 }
 
 function StoreCard({ item, lang, t }) {
-  //const badge = getBadge(item, t);
+  const badge = getBadge(item, t);
   const subName = getStoreSubName(item, lang);
 
   return (
@@ -385,6 +391,7 @@ function StoreCard({ item, lang, t }) {
         </div>
 
         //<span className={badge.className}>{badge.text}</span>
+		{badge && <span className={badge.className}>{badge.text}</span>}
       </div>
 
       {item.status === "closed" && (
