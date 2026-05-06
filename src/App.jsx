@@ -53,6 +53,7 @@ const I18N = {
     lastTimePrefix: "通常",
     lastTimeSuffix: "左右停止取號",
     warning: "⚠️本網站非鼎泰豐官方營運，為基於公開資料之統計與推估結果，僅供參考，實際候位與入座時間仍以現場公告為準。",
+	officialQueueLink: "查看鼎泰豐官方現場到號查詢",
     min: "分鐘",
     searchError: "查詢失敗，請確認 API 位址、網路或後端服務狀態。",
     weekdays: ["日", "一", "二", "三", "四", "五", "六"],
@@ -86,6 +87,7 @@ const I18N = {
   lastTimePrefix: "Usually stops issuing queue tickets around",
   lastTimeSuffix: "",
   warning: "⚠️This website is not operated by Din Tai Fung. The results are statistical estimates based on public data and are for reference only. Actual waiting and seating times should follow on-site announcements.",
+  officialQueueLink: "View Din Tai Fung official queue status",
   min: "min",
   searchError: "Search failed. Please check the API URL, network, or backend service status.",
   weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
@@ -121,6 +123,7 @@ ja: {
   lastTimePrefix: "通常",
   lastTimeSuffix: "頃に整理券の発行を終了",
   warning: "⚠️本サイトは鼎泰豊公式ではありません。公開データに基づく統計・推定結果であり、参考情報です。実際の待ち時間や入店時間は現地の案内に従ってください。",
+  officialQueueLink: "鼎泰豊公式の呼び出し状況を見る",
   min: "分",
   searchError: "検索に失敗しました。API URL、ネットワーク、またはバックエンドの状態を確認してください。",
   weekdays: ["日", "月", "火", "水", "木", "金", "土"],
@@ -156,6 +159,7 @@ ko: {
   lastTimePrefix: "보통",
   lastTimeSuffix: "쯤 번호표 발권을 마감합니다",
   warning: "⚠️본 사이트는 딘타이펑 공식 운영 사이트가 아닙니다. 공개 데이터를 바탕으로 한 통계 및 추정 결과이며 참고용입니다. 실제 대기 및 입장 시간은 현장 안내를 기준으로 합니다.",
+  officialQueueLink: "딘타이펑 공식 대기번호 현황 보기",
   min: "분",
   searchError: "조회에 실패했습니다. API 주소, 네트워크 또는 백엔드 서비스 상태를 확인하세요.",
   weekdays: ["일", "월", "화", "수", "목", "금", "토"],
@@ -191,6 +195,7 @@ vi: {
   lastTimePrefix: "Thường ngừng phát số vào khoảng",
   lastTimeSuffix: "",
   warning: "⚠️Trang web này không do Din Tai Fung vận hành chính thức. Kết quả là ước tính thống kê dựa trên dữ liệu công khai và chỉ dùng để tham khảo. Thời gian chờ và vào bàn thực tế vui lòng theo thông báo tại cửa hàng.",
+  officialQueueLink: "Xem tình trạng gọi số chính thức của Din Tai Fung",
   min: "phút",
   searchError: "Tìm kiếm thất bại. Vui lòng kiểm tra địa chỉ API, mạng hoặc trạng thái máy chủ.",
   weekdays: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
@@ -226,6 +231,7 @@ th: {
   lastTimePrefix: "โดยปกติหยุดแจกบัตรคิวประมาณ",
   lastTimeSuffix: "",
   warning: "⚠️เว็บไซต์นี้ไม่ได้ดำเนินการโดย Din Tai Fung อย่างเป็นทางการ ผลลัพธ์เป็นการประมาณจากสถิติของข้อมูลสาธารณะเพื่อใช้อ้างอิงเท่านั้น เวลารอและเวลาได้นั่งจริงให้ยึดตามประกาศหน้าร้าน",
+  officialQueueLink: "ดูสถานะเรียกคิวอย่างเป็นทางการของ Din Tai Fung",
   min: "นาที",
   searchError: "ค้นหาไม่สำเร็จ โปรดตรวจสอบที่อยู่ API เครือข่าย หรือสถานะเซิร์ฟเวอร์",
   weekdays: ["อา.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."],
@@ -261,6 +267,7 @@ id: {
   lastTimePrefix: "Biasanya berhenti membagikan nomor sekitar",
   lastTimeSuffix: "",
   warning: "⚠️Situs ini tidak dioperasikan secara resmi oleh Din Tai Fung. Hasil merupakan estimasi statistik berdasarkan data publik dan hanya untuk referensi. Waktu tunggu dan waktu duduk sebenarnya mengikuti pengumuman di lokasi.",
+  officialQueueLink: "Lihat status antrean resmi Din Tai Fung",
   min: "menit",
   searchError: "Pencarian gagal. Periksa URL API, jaringan, atau status server.",
   weekdays: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"],
@@ -296,6 +303,7 @@ ms: {
   lastTimePrefix: "Biasanya berhenti memberi nombor sekitar",
   lastTimeSuffix: "",
   warning: "⚠️Laman ini tidak dikendalikan secara rasmi oleh Din Tai Fung. Keputusan ialah anggaran statistik berdasarkan data awam dan hanya untuk rujukan. Masa menunggu dan masa duduk sebenar tertakluk kepada pengumuman di lokasi.",
+  officialQueueLink: "Lihat status nombor giliran rasmi Din Tai Fung",
   min: "minit",
   searchError: "Carian gagal. Sila semak URL API, rangkaian atau status pelayan.",
   weekdays: ["Ahd", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
@@ -581,7 +589,18 @@ export default function App() {
               <div className="ad-content">{t.adText}</div>
             </section>
 
-            <section className="site-warning">{t.warning}</section>
+            <section className="site-warning">
+              <p>{t.warning}</p>
+
+              <a
+                href="https://www.dintaifung.tw/Queue/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="official-link"
+              >
+                {t.officialQueueLink}
+              </a>
+            </section>
 
             {error && <section className="panel error-box">{error}</section>}
 
