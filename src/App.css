@@ -761,7 +761,7 @@ select {
 }
 
 .wheel-disc-real.is-spinning {
-  animation: wheelSpin 0.8s linear infinite;
+  animation: wheelSpin 0.2s linear infinite;
   transition: none;
 }
 
