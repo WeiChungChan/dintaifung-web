@@ -9,6 +9,7 @@ import ContactPage from "./ContactPage";
 import PrivacyPage from "./PrivacyPage";
 import GuidePage from "./GuidePage";
 import AdminPage from "./AdminPage";
+import AffiliateAdBanner from "./AffiliateAdBanner";
 
 const API_BASE = "/api";
 
@@ -591,10 +592,7 @@ export default function App() {
               </form>
             </section>
 
-            <section className="ad-banner">
-              <div className="ad-label">{t.adTitle}</div>
-              <div className="ad-content">{t.adText}</div>
-            </section>
+            <AffiliateAdBanner lang={lang} />
 
             <section className="site-warning">
               <p>{t.warning}</p>

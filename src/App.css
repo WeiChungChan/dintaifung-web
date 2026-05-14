@@ -1029,6 +1029,57 @@ select {
   }
 }
 
+.affiliate-ad-banner {
+  margin: 18px 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fffdfa;
+}
+
+.affiliate-ad-label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.affiliate-ad-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.affiliate-ad-card {
+  flex: 0 0 128px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.affiliate-ad-card img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.affiliate-ad-title {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.affiliate-ad-subtitle {
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
 /* =========================
    Desktop / Tablet
 ========================= */
