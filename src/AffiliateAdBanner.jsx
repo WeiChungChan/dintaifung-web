@@ -8,7 +8,7 @@ export default function AffiliateAdBanner({ lang = "zh" }) {
   useEffect(() => {
     async function loadAds() {
       try {
-        const res = await fetch(`${API_BASE}/ads?placement=home&lang=${lang}`);
+        const res = await fetch(`${API_BASE}/ads?placement=home&lang=zh`);
         if (!res.ok) return;
 
         const data = await res.json();
@@ -19,7 +19,7 @@ export default function AffiliateAdBanner({ lang = "zh" }) {
     }
 
     loadAds();
-  }, [lang]);
+  }, []);
 
   if (!ads.length) return null;
 
