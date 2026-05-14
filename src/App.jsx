@@ -8,6 +8,7 @@ import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
 import PrivacyPage from "./PrivacyPage";
 import GuidePage from "./GuidePage";
+import AdminPage from "./AdminPage";
 
 const API_BASE = "/api";
 
@@ -487,6 +488,12 @@ export default function App() {
     } finally {
       setLoading(false);
     }
+  }
+  
+  const path = window.location.pathname;
+
+  if (path === "/nimda") {
+    return <AdminPage />;
   }
 
   return (
