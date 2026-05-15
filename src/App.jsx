@@ -66,6 +66,11 @@ const I18N = {
 	store: "分店",
 	loading: "讀取中...",
 	crowdChartTitle: "等待時間分布",
+	usualWaitPrefix: "通常需等候",
+	homeTab: "主頁",
+	crowdTab: "各時段人潮",
+	voteTab: "美味排名",
+	wheelTab: "點菜轉盤",
   },
   en: {
   appKicker: "Din Tai Fung Ticket Time Helper",
@@ -106,6 +111,11 @@ const I18N = {
   store: "Branch",
   loading: "Loading...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "Usually wait",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 
 ja: {
@@ -148,6 +158,11 @@ ja: {
   store: "店舗",
   loading: "読み込み中...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "通常の待ち時間",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 
 ko: {
@@ -190,6 +205,11 @@ ko: {
   store: "지점",
   loading: "불러오는 중...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "보통 대기 시간",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 
 vi: {
@@ -232,6 +252,11 @@ vi: {
   store: "Chi nhánh",
   loading: "Đang tải...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "Thường phải chờ",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 
 th: {
@@ -274,6 +299,11 @@ th: {
   store: "สาขา",
   loading: "กำลังโหลด...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "โดยปกติต้องรอ",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 
 id: {
@@ -316,6 +346,11 @@ id: {
   store: "Cabang",
   loading: "Memuat...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "Biasanya menunggu",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 
 ms: {
@@ -358,6 +393,11 @@ ms: {
   store: "Cawangan",
   loading: "Memuatkan...",
   crowdChartTitle: "Wait Time Distribution",
+  usualWaitPrefix: "Biasanya perlu menunggu",
+  homeTab: "Home",
+  crowdTab: "Crowd",
+  voteTab: "Ranking",
+  wheelTab: "Wheel",
 },
 };
 
@@ -594,7 +634,7 @@ export default function App() {
             className={activeTab === "home" ? "active" : ""}
             onClick={() => setActiveTab("home")}
           >
-            主頁
+            {t.homeTab}
           </button>
 		  
 		  <button
@@ -602,7 +642,7 @@ export default function App() {
 		    className={activeTab === "crowd" ? "active" : ""}
 		    onClick={() => setActiveTab("crowd")}
 		  >
-		    各時段人潮
+		    {t.crowdTab}
 		  </button>
 
           <button
@@ -610,7 +650,7 @@ export default function App() {
             className={activeTab === "vote" ? "active" : ""}
             onClick={() => setActiveTab("vote")}
           >
-            美味排名
+            {t.voteTab}
           </button>
 		  
 		  <button
@@ -618,7 +658,7 @@ export default function App() {
             className={activeTab === "wheel" ? "active" : ""}
             onClick={() => setActiveTab("wheel")}
           >
-            點菜轉盤
+            {t.wheelTab}
           </button>
         </nav>
 

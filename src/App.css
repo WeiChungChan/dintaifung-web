@@ -1609,6 +1609,34 @@ select {
   writing-mode: vertical-rl;
 }
 
+.crowd-card {
+  justify-content: space-between;
+}
+
+.crowd-main {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.crowd-wait {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  text-align: right;
+}
+
+.crowd-wait-prefix {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+}
+
+.crowd-wait-value {
+  font-size: 24px;
+  font-weight: 800;
+}
+
 /* =========================
    Desktop / Tablet
 ========================= */
@@ -1630,5 +1658,27 @@ select {
 
   .hero h1 {
     font-size: 38px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 760px) {
+  .app-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .app-tabs button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    min-width: max-content;
+    padding: 10px 16px;
+    border-radius: 999px;
   }
 }
