@@ -10,6 +10,7 @@ import PrivacyPage from "./PrivacyPage";
 import GuidePage from "./GuidePage";
 import AdminPage from "./AdminPage";
 import AffiliateAdBanner from "./AffiliateAdBanner";
+import CrowdPage from "./CrowdPage";
 
 const API_BASE = "/api";
 
@@ -59,6 +60,12 @@ const I18N = {
     min: "分鐘",
     searchError: "查詢失敗，請確認 API 位址、網路或後端服務狀態。",
     weekdays: ["日", "一", "二", "三", "四", "五", "六"],
+	crowdTab: "各時段人潮",
+	crowdTitle: "各時段人潮",
+	crowdDescription: "查看不同抽號時段通常需要等待多久，找出比較不用久等的時段。",
+	store: "分店",
+	loading: "讀取中...",
+	crowdChartTitle: "等待時間分布",
   },
   en: {
   appKicker: "Din Tai Fung Ticket Time Helper",
@@ -93,6 +100,12 @@ const I18N = {
   min: "min",
   searchError: "Search failed. Please check the API URL, network, or backend service status.",
   weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+  crowdTab: "Crowd",
+  crowdTitle: "Crowd by Time",
+  crowdDescription: "See how long the wait usually is at different ticket times and find less crowded periods.",
+  store: "Branch",
+  loading: "Loading...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 
 ja: {
@@ -129,6 +142,12 @@ ja: {
   min: "分",
   searchError: "検索に失敗しました。API URL、ネットワーク、またはバックエンドの状態を確認してください。",
   weekdays: ["日", "月", "火", "水", "木", "金", "土"],
+  crowdTab: "時間帯混雑",
+  crowdTitle: "時間帯ごとの混雑状況",
+  crowdDescription: "整理券を取る時間帯ごとの待ち時間を確認し、比較的空いている時間帯を探せます。",
+  store: "店舗",
+  loading: "読み込み中...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 
 ko: {
@@ -165,6 +184,12 @@ ko: {
   min: "분",
   searchError: "조회에 실패했습니다. API 주소, 네트워크 또는 백엔드 서비스 상태를 확인하세요.",
   weekdays: ["일", "월", "화", "수", "목", "금", "토"],
+  crowdTab: "시간대 혼잡도",
+  crowdTitle: "시간대별 혼잡도",
+  crowdDescription: "번호표를 뽑는 시간대별 예상 대기 시간을 확인하고 비교적 덜 붐비는 시간을 찾아보세요.",
+  store: "지점",
+  loading: "불러오는 중...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 
 vi: {
@@ -201,6 +226,12 @@ vi: {
   min: "phút",
   searchError: "Tìm kiếm thất bại. Vui lòng kiểm tra địa chỉ API, mạng hoặc trạng thái máy chủ.",
   weekdays: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+  crowdTab: "Mức độ đông theo giờ",
+  crowdTitle: "Mức độ đông theo từng khung giờ",
+  crowdDescription: "Xem thời gian chờ theo từng thời điểm lấy số và tìm khung giờ ít phải chờ hơn.",
+  store: "Chi nhánh",
+  loading: "Đang tải...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 
 th: {
@@ -237,6 +268,12 @@ th: {
   min: "นาที",
   searchError: "ค้นหาไม่สำเร็จ โปรดตรวจสอบที่อยู่ API เครือข่าย หรือสถานะเซิร์ฟเวอร์",
   weekdays: ["อา.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."],
+  crowdTab: "ความหนาแน่นตามช่วงเวลา",
+  crowdTitle: "ความหนาแน่นในแต่ละช่วงเวลา",
+  crowdDescription: "ดูเวลารอโดยประมาณในแต่ละช่วงเวลารับคิว และค้นหาช่วงที่คนน้อยกว่า",
+  store: "สาขา",
+  loading: "กำลังโหลด...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 
 id: {
@@ -273,6 +310,12 @@ id: {
   min: "menit",
   searchError: "Pencarian gagal. Periksa URL API, jaringan, atau status server.",
   weekdays: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"],
+  crowdTab: "Keramaian per Waktu",
+  crowdTitle: "Keramaian di Setiap Waktu",
+  crowdDescription: "Lihat estimasi waktu tunggu pada berbagai jam pengambilan nomor antrean dan temukan waktu yang lebih sepi.",
+  store: "Cabang",
+  loading: "Memuat...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 
 ms: {
@@ -309,6 +352,12 @@ ms: {
   min: "minit",
   searchError: "Carian gagal. Sila semak URL API, rangkaian atau status pelayan.",
   weekdays: ["Ahd", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
+  crowdTab: "Kesibukan Mengikut Masa",
+  crowdTitle: "Kesibukan Mengikut Setiap Waktu",
+  crowdDescription: "Lihat anggaran masa menunggu bagi setiap waktu ambil nombor dan cari waktu yang kurang sibuk.",
+  store: "Cawangan",
+  loading: "Memuatkan...",
+  crowdChartTitle: "Wait Time Distribution",
 },
 };
 
@@ -333,6 +382,19 @@ function buildTimeOptions() {
 
 const TIME_OPTIONS = buildTimeOptions();
 
+const STORES = [
+  { store_id: "0003", c_name: "復興店", e_name: "Fuxing Branch", j_name: "復興店", k_name: "푸싱점" },
+  { store_id: "0005", c_name: "天母店", e_name: "Tianmu Branch", j_name: "天母店", k_name: "톈무점" },
+  { store_id: "0006", c_name: "新竹店", e_name: "Hsinchu Branch", j_name: "新竹店", k_name: "신주점" },
+  { store_id: "0007", c_name: "101店", e_name: "Taipei 101 Branch", j_name: "台北101店", k_name: "타이베이 101점" },
+  { store_id: "0008", c_name: "台中店", e_name: "Taichung Branch", j_name: "台中店", k_name: "타이중점" },
+  { store_id: "0009", c_name: "板橋店", e_name: "Banqiao Branch", j_name: "板橋店", k_name: "반차오점" },
+  { store_id: "0010", c_name: "高雄店", e_name: "Kaohsiung Branch", j_name: "高雄店", k_name: "가오슝점" },
+  { store_id: "0011", c_name: "南西店", e_name: "Nanxi Branch", j_name: "南西店", k_name: "난시점" },
+  { store_id: "0012", c_name: "A4店", e_name: "A4 Branch", j_name: "A4店", k_name: "A4점" },
+  { store_id: "0013", c_name: "A13店", e_name: "A13 Branch", j_name: "A13店", k_name: "A13점" },
+  { store_id: "0015", c_name: "新生店", e_name: "Xinsheng Branch", j_name: "新生店", k_name: "신성점" },
+];
 function getStoreName(item, lang) {
   if (["vi", "th", "id", "ms"].includes(lang)) return item.store_name_en;
   if (lang === "en") return item.store_name_en;
@@ -500,36 +562,7 @@ export default function App() {
   return (
     <div className="page">
       <div className="container">
-        <nav className="app-tabs">
-          <button
-            type="button"
-            className={activeTab === "home" ? "active" : ""}
-            onClick={() => setActiveTab("home")}
-          >
-            主頁
-          </button>
-
-          <button
-            type="button"
-            className={activeTab === "vote" ? "active" : ""}
-            onClick={() => setActiveTab("vote")}
-          >
-            美味排名
-          </button>
-		  
-		  <button
-            type="button"
-            className={activeTab === "wheel" ? "active" : ""}
-            onClick={() => setActiveTab("wheel")}
-          >
-            點菜轉盤
-          </button>
-        </nav>
-
-        {activeTab === "home" && (
-          <>
-            <header className="hero">
-              <div className="hero-topbar">
+	    <div className="hero-topbar">
                 <div className="brand-kicker">
                   <img src="/favicon.ico" alt="Shoronpolover logo" />
                   <p className="hero-kicker">{t.appKicker}</p>
@@ -553,8 +586,45 @@ export default function App() {
                     </button>
                   ))}
                 </div>
-              </div>
+	    </div>
+		
+        <nav className="app-tabs">
+          <button
+            type="button"
+            className={activeTab === "home" ? "active" : ""}
+            onClick={() => setActiveTab("home")}
+          >
+            主頁
+          </button>
+		  
+		  <button
+		    type="button"
+		    className={activeTab === "crowd" ? "active" : ""}
+		    onClick={() => setActiveTab("crowd")}
+		  >
+		    各時段人潮
+		  </button>
 
+          <button
+            type="button"
+            className={activeTab === "vote" ? "active" : ""}
+            onClick={() => setActiveTab("vote")}
+          >
+            美味排名
+          </button>
+		  
+		  <button
+            type="button"
+            className={activeTab === "wheel" ? "active" : ""}
+            onClick={() => setActiveTab("wheel")}
+          >
+            點菜轉盤
+          </button>
+        </nav>
+
+        {activeTab === "home" && (
+          <>
+            <header className="hero">
               <h1>{t.title}</h1>
               <p className="hero-subtitle">{t.subtitle}</p>
 			  <p className="seo-brand">
@@ -635,6 +705,17 @@ export default function App() {
 		{activeTab === "contact" && <ContactPage />}
 		{activeTab === "privacy" && <PrivacyPage />}
 		{activeTab === "guide" && <GuidePage />}
+		{activeTab === "crowd" && (
+		  <>
+		    <CrowdPage
+		      stores={STORES}
+		      lang={lang}
+		      t={t}
+		    />
+		    <AffiliateAdBanner />
+		  </>
+		)}
+		
       </div>
 	  
 	  <footer className="site-footer">
