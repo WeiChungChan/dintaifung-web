@@ -27,7 +27,7 @@ const LANGS = [
 const I18N = {
   zh: {
     appKicker: "鼎泰豐抽號時間助手",
-    title: "想幾點吃到，幫你反推幾點該去抽號",
+    title: "想幾點吃到鼎泰豐，幫你反推幾點該去抽號",
     subtitle: "輸入日期與想入座時間，系統會列出各分店的建議抽號時間。",
     date: "日期",
     seatTime: "想入座時間",
@@ -629,8 +629,8 @@ export default function App() {
           </>
         )}
 
-        {activeTab === "vote" && <VotePage />}
-		{activeTab === "wheel" && <WheelPage />}
+        {activeTab === "vote" && (<><VotePage /><AffiliateAdBanner /></>)}
+		{activeTab === "wheel" && (<><WheelPage /><AffiliateAdBanner /></>)}
 		{activeTab === "about" && <AboutPage />}
 		{activeTab === "contact" && <ContactPage />}
 		{activeTab === "privacy" && <PrivacyPage />}
