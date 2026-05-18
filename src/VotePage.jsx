@@ -86,7 +86,7 @@ export default function VotePage() {
     }));
   }, [activeItems]);
 
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("2");
   const [choices, setChoices] = useState(() => loadSavedChoices());
   const [activeRank, setActiveRank] = useState(() =>
     nextEmptyRank(loadSavedChoices())

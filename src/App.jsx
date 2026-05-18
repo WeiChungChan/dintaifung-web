@@ -27,7 +27,7 @@ const LANGS = [
 
 const I18N = {
   zh: {
-    appKicker: "鼎泰豐抽號時間助手",
+    appKicker: "鼎泰豐抽號超人",
     title: "想幾點吃到鼎泰豐，幫你反推幾點該去抽號",
     subtitle: "輸入日期與想入座時間，系統會列出各分店的建議抽號時間。",
     date: "日期",
@@ -668,7 +668,7 @@ export default function App() {
               <h1>{t.title}</h1>
               <p className="hero-subtitle">{t.subtitle}</p>
 			  <p className="seo-brand">
-			    Shoronpolover 是一個鼎泰豐抽號時間助手，幫助使用者預測最佳抽號時間。
+			    Shoronpolover 是一個鼎泰豐抽號超人，幫助使用者預測最佳抽號時間。
 			  </p>
             </header>
 
